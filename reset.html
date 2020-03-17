@@ -1,0 +1,9 @@
+<!DOCTYPE html><html><head><title>Reset - Timer Tab</title><link rel="stylesheet" type="text/css" href="/content_page.af09291b.css"><style>button[disabled]{opacity:.4}</style></head><body> <h2>
+Factory Reset
+</h2> <p>
+Remove all your settings and set Timer Tab to a pristine state.
+</p> <p>
+<button type="button">Factory Reset</button>
+</p> <p>
+<span id="state"></span>
+</p> <script>var e="🗸 ",t=document.querySelector("button"),o=document.querySelector("#state");function r(){t.setAttribute("disabled","disabled")}0===localStorage.length&&(r(),o.innerHTML=e+"Your Timer Tab is already factory reset."),t.onclick=function(){window.localStorage.clear(),r(),o.innerHTML=e+"Reset done."};</script> </body></html>
